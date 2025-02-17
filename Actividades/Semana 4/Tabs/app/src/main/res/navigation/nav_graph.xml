@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/whoIAmFragment">
+    <fragment
+        android:id="@+id/whoIAmFragment"
+        android:name="com.example.tabs.QuiensoyFragment"
+        android:label="Sobre mí."
+        tools:layout="@layout/fragment_quien_soy" />
+    <fragment
+        android:id="@+id/careerFragment"
+        android:name="com.example.tabs.CarreraFragment"
+        android:label="Mi carrera."
+        tools:layout="@layout/fragment_carrera" />
+    <fragment
+        android:id="@+id/technologiesFragment"
+        android:name="com.example.tabs.TecnologiaFragment"
+        android:label="Tecnologías que uso."
+        tools:layout="@layout/fragment_tecnologias" />
+</navigation>
