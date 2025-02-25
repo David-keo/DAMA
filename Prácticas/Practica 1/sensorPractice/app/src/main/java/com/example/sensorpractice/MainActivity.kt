@@ -75,7 +75,7 @@ class MainActivity : ComponentActivity(), SensorEventListener {
             val z = event.values[2]
 
             // Actualizar el estado con los nuevos valores del sensor
-            sensorValues.value = "Nombre: Aaron Fagoaga\nCódigo: U20210154\nValores del sensor:\nX: $x\nY: $y\nZ: $z"
+            sensorValues.value = "Nombre: Carlos David\nCódigo: U20210475\nValores del sensor:\nX: $x\nY: $y\nZ: $z"
         }
     }
 
@@ -97,6 +97,6 @@ fun SensorDisplay(sensorValues: String, modifier: Modifier = Modifier) {
 @Composable
 fun SensorDisplayPreview() {
     SensorPracticeTheme {
-        SensorDisplay("Nombre: Aaron Fagoaga\nCódigo: U20210154\nValores del sensor:\nX: 0.0\nY: 0.0\nZ:0.0")
+        SensorDisplay("Nombre: Carlos Guerrero\nCódigo: U20210475\nValores del sensor:\nX: 0.0\nY: 0.0\nZ:0.0")
     }
 }
