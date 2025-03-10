@@ -17,6 +17,15 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    /*
+    Trabajar en esta aplicación fue entretenido, ya que aprendí a manejar la cámara del celular para tomar fotos y guardarlas
+    en el celular o computadora, yambién descubrí cómo compartirlas fácilmente por correo y WhatsApp, algo que usamos
+    yodo el tiempo en la vida diaria. En el diseño, me enfoqué en hacerla similar a la interfaz que brindo ya que es sencilla y clara,
+    con botones fáciles de usar y una interfaz intuitiva. Además, entendí mejor cómo funcionan los permisos
+    en Android y por qué son tan importantes. En general, esta práctica me ayudó a aclarar unas dudas que tenía y
+    a entender mejor cómo funcionan las apps móviles.
+    */
+
     private lateinit var btnTomarFoto: Button
     private lateinit var btnCompartirCorreo: ImageView
     private lateinit var btnCompartirWhatsapp: ImageView
