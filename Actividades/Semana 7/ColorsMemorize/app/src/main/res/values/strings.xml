@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ColorsMemorize</string>
+    <string name="tab_text_1">English</string>
+    <string name="tab_text_2">Spanish</string>
+</resources>
