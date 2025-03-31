@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    color: #fff;
+}
+
+.card {
+    background-color: #ffffff11;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 1rem;
+    font-weight: bold;
+}

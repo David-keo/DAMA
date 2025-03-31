@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aesthetic_bg">#1E1E2F</color>
+    <color name="aesthetic_header">#2D2D44</color>
+    <color name="aesthetic_text_primary">#F8F8F2</color>
+    <color name="aesthetic_button_1">#8BE9FD</color>
+    <color name="aesthetic_button_2">#50FA7B</color>
+    <color name="aesthetic_button_3">#FF79C6</color>
+    <color name="aesthetic_card">#282A36</color>
+    <color name="aesthetic_divider">#44475A</color>
+    <color name="aesthetic_footer">#6272A4</color>
+
+</resources>

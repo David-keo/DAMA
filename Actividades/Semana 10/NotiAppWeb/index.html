@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Notificación Push</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging-compat.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h2>Notificación Push Firebase</h2>
+        <input type="text" id="asunto" placeholder="Asunto">
+        <textarea id="mensaje" placeholder="Mensaje"></textarea>
+        <button onclick="enviarNotificacion()">Enviar Notificación</button>
+        <div id="status"></div>
+    </div>
+
+    <script>
+
+        const firebaseConfig = {
+            //credenciales, las quite porque peligroso
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const messaging = firebase.messaging();
+
+        async function enviarNotificacion() {
+            const asunto = document.getElementById("asunto").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+            const status = document.getElementById("status");
+
+            if (!asunto || !mensaje) {
+                status.textContent = "⚠️ Asunto y mensaje son obligatorios.";
+                status.style.color = "#FFEB3B";
+                return;
+            }
+
+            try {
+                const response = await fetch("http://localhost:5000/envio", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        title: asunto,
+                        body: mensaje
+                    })
+                });
+
+                if (response.ok) {
+                    status.textContent = "✅ Notificación enviada exitosamente.";
+                    status.style.color = "#C8E6C9";
+                } else {
+                    throw new Error("Error al enviar notificación");
+                }
+            } catch (err) {
+                status.textContent = "❌ Falló el envío de la notificación.";
+                status.style.color = "#FFCDD2";
+                console.error(err);
+            }
+        }
+    </script>
+</body>
+
+</html>
